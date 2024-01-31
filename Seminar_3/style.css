@@ -3,6 +3,15 @@
   padding: 0;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.center {
+  padding-left: calc(50% - 585px);
+  padding-right: calc(50% - 585px);
+}
+
 a {
   text-decoration: none;
 }
@@ -13,6 +22,11 @@ a {
 
 .header {
   background: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: baseline;
 }
 
 .logo {
@@ -21,7 +35,6 @@ a {
 
 .Grow {
   color: #000;
-  font-family: Gilroy-Bold;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -30,7 +43,6 @@ a {
 
 .Be {
   color: #f25822;
-  font-family: Gilroy-Bold;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -39,11 +51,12 @@ a {
 
 .menu {
   background: #fff;
+  display: flex;
+  gap: 32px;
 }
 
 .start_link {
   color: #f25822;
-  font-family: Gilroy-SemiBold;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -51,7 +64,6 @@ a {
 }
 .menu_link {
   color: #000;
-  font-family: Gilroy-Medium;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -59,14 +71,25 @@ a {
 }
 
 .body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .text {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .Heading_body {
+  width: 522px;
   color: #000;
-  font-family: Gilroy-Bold;
   font-size: 60px;
   font-style: normal;
   font-weight: 400;
@@ -74,12 +97,22 @@ a {
 }
 
 .paragraf_body {
+  width: 466px;
   color: #888;
-  font-family: Gilroy-Medium;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: flex-end;
+  justify-content: center;
+  align-items: baseline;
+  gap: 32px;
 }
 
 .btn {
@@ -90,7 +123,6 @@ a {
 
 .btn_w {
   color: #aaa;
-  font-family: Gilroy-Bold;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
